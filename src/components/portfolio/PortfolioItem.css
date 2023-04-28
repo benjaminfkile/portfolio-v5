@@ -1,0 +1,11 @@
+.portfolio-item-image {
+    height: 250px;
+    /* width: 100%; */
+    object-fit: cover;
+}
+
+.portfolio-modal-content{
+    height: 90vh;
+    margin-top: 5vh;
+    overflow-y: auto;
+}
