@@ -46,7 +46,7 @@ class App extends Component<{}, State> {
         <Services servicesHeader="Lorem ipsum dolor sit amet, consectetur adipisicing" />
         <Portfolio />
         <Contact />
-        <Footer companyName="Your Company Name" />
+        <Footer companyName="" />
       </div >
     )
   }

@@ -3,3 +3,36 @@
     width: 100%;
     height: 100%;
 }
+
+.timeline-item {
+    display: flex;
+}
+
+.timeline-item-odd {
+    flex-direction: row-reverse;
+}
+
+
+
+.timeline-item-odd .timeline-heading {
+    text-align: left;
+}
+
+
+.timeline-item-odd .subheading {
+    text-align: left;
+}
+
+.timeline-item-odd .text-muted {
+    text-align: left;
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {
+    .timeline-item-odd .timeline-panel {
+        padding-left: 20px !important;
+    }
+}

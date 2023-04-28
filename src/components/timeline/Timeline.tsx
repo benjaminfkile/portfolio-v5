@@ -1,7 +1,6 @@
 import { FunctionComponent } from "react"
 import TimelineItem from "./TimelineItem"
 import timelineItems from "./timelineItems"
-import TimelineLastItem from "./TimelineLastItem"
 
 interface Props {
 
@@ -18,6 +17,7 @@ const Timeline: FunctionComponent<Props> = () => {
                         title={item.title}
                         text={item.text}
                         imgUrl={item.imgUrl}
+                        index={i}
                     />
                 </li>)}
             {/* <TimelineLastItem
