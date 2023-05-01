@@ -18,10 +18,9 @@ const Services: FunctionComponent<Props> = (props) => {
                     {serviceItems.map((item, i) =>
                         <div className="col-md-4" key={i}>
                             <ServiceItem
-                                source={item.source}
+                                icon_source={item.icon_source}
                                 title={item.title}
                                 text={item.text}
-                                proficiency={item.proficiency}
                             />
                         </div>
                     )}

@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react"
-import "./Header.css"
 import HeaderBackground from "./header_background/HeaderBackground"
+import "./Header.css"
 
 interface HeaderProps {
     
