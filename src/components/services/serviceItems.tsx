@@ -1,17 +1,6 @@
 
 const serviceItems = [
-    {
-        icon_source: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-        title: "React",
-        text: "My years of experience with React, including the utilization of hooks, Redux, and Context API, have allowed me to construct responsive and interactive user interfaces and create streamlined state management systems for complex web applications.",
-        order: 1,
-    },
-    {
-        icon_source: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
-        title: "TypeScript",
-        text: "By leveraging TypeScript's static type checking and other functionalities, I have enhanced the dependability and maintainability of my web applications while detecting errors early on through my experience with it.",
-        order: 3,
-    },
+
     {
         icon_source: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
         title: "CSS",
