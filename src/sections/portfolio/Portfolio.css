@@ -1,0 +1,10 @@
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#portfolio{
+    padding: 0;
+    padding-top: 15px;
+}
