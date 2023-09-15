@@ -25,7 +25,7 @@ const HeaderBackground: FunctionComponent<{}> = () => {
                         <span className="circleLight"></span>
                         <div className="text">
                             <h2>Hi</h2>
-                            <h3>I`m Ben</h3>
+                            <h3>I'm Ben</h3>
                         </div>
                     </div>
                 </div>
