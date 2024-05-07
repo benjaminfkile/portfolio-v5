@@ -12,6 +12,7 @@ import Footer from "./components/Footer"
 import ContentResponseTypes from "./types/ContentResponseTypes"
 import MainLoader from "./components/loaders/MainLoader/MainLoader"
 import APIError from "./components/error/APIError"
+import "./App.css"
 
 interface State {
   apiResponse: ContentResponseTypes

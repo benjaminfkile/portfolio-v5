@@ -1,0 +1,23 @@
+.App {
+    background-color: #000000;
+}
+
+.AppLoading {
+    display: none;
+}
+
+.custom-heading-color {
+    color: #39FF14;
+}
+
+.text-muted{
+    color: #ffffff;
+}
+
+.custom-subheading-color {
+    color: #ffffff;
+}
+
+.HeaderItemsGroup {
+    z-index: 1;
+}
