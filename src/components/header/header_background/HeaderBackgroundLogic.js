@@ -16,7 +16,7 @@ const hblService = {
                 CY: mouse.CY
             },
             imags = [
-                '/res/bg_pic.png',
+                '/res/bg_pic.jpg',
             ];
 
         $('.block').on('mousemove', function (e) {
