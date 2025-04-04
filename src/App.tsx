@@ -15,19 +15,18 @@ import APIError from "./components/error/APIError"
 
 interface State {
   apiResponse: ContentResponseTypes
-  loading: boolean
+  // loading: boolean
 }
 
 class App extends Component<{}, State> {//bump
 
   state = {
     apiResponse: { content: { about: "", portfolioItems: [], skillItems: [], timelineItems: [] }, error: false, errorMsg: {} },
-    loading: true,
+    //loading: true,
   }
 
   componentDidMount(): void {
     this.go()
-    this.handleLoadSplash()
   }
 
   /* A function that is used to update the state. It is used to prevent the state from being updated in
@@ -39,6 +38,7 @@ class App extends Component<{}, State> {//bump
   go = () => {
     axios.get(`${process.env.REACT_APP_API_URL}/api/portfolio-content`)
       .then(res => {
+        console.log(res.data)
         const apiResponse: ContentResponseTypes = res.data
         if (apiResponse.error) {
           this.manageState([{ key: "apiResponse", value: apiResponse }, { key: "loading", value: false }])
@@ -50,33 +50,18 @@ class App extends Component<{}, State> {//bump
       })
   }
 
-  handleLoadSplash = (millisecons?: number) => {
-    const renderOn = 3000
-    const { apiResponse } = this.state
-    const ms = millisecons ? millisecons : 1000
-    setTimeout(() => {
-      if (apiResponse.content) {
-        if (ms === renderOn) {
-          this.manageState([{ key: "loading", value: false }])
-        } else {
-          this.handleLoadSplash(ms + 1000)
-        }
-      } else {
-        this.handleLoadSplash(0)
-      }
-    }, 1000)
-  }
 
   render() {
 
-    const { apiResponse, loading } = this.state
+    const { apiResponse, /*loading*/ } = this.state
     const content = apiResponse.content
     const error = apiResponse.error
-    
+
     return (
       <div className="App">
         {!error &&
-          <div className={`${loading ? "AppLoading" : "AppNotLoading"}`}>
+          // <div className={`${loading ? "AppLoading" : "AppNotLoading"}`}>
+          <div className={"AppNotLoading"}>
             <NavMenu />
             <Header />
             <About about={content.about} />
@@ -87,7 +72,7 @@ class App extends Component<{}, State> {//bump
             <Footer text="benkile" />
           </div>
         }
-        {loading && !error && <MainLoader />}
+        {/* {loading && !error && <MainLoader />} */}
         {error && <APIError />}
       </div >
     )
