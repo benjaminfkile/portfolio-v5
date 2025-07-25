@@ -34,9 +34,20 @@ const PortfolioItemModal: FunctionComponent<Props> = (props) => {
                                     </div>
                                     <h2 className="text-uppercase portfolio-modal-title">{portfolioItem.title}</h2>
                                     <p className="item-intro text-muted portfolio-modal-title-p">{portfolioItem.intro}</p>
-                                    {portfolioItem.media_type > 0 && <video id={`modal-video-${index}`} crossOrigin="anonymous" className="profolio-modal-video-player" width="100%" muted autoPlay loop controls>
-                                        <source src={`${process.env.REACT_APP_API_URL}/api/media?key=videos/${portfolioItem.file_name}`} type="video/mp4" />
-                                    </video>}
+                                    {portfolioItem.media_type > 0 &&
+                                        <video
+                                            id={`modal-video-${index}`}
+                                            crossOrigin="anonymous"
+                                            className="profolio-modal-video-player"
+                                            width="100%"
+                                            muted
+                                            autoPlay
+                                            playsInline
+                                            loop
+                                            controls
+                                        >
+                                            <source src={`${process.env.REACT_APP_API_URL}/api/media?key=videos/${portfolioItem.file_name}`} type="video/mp4" />
+                                        </video>}
                                     {portfolioItem.media_type < 1 &&
                                         <div className="portfolio-modal-content-image-wrapper-wrapper">
                                             <div className="portfolio-modal-content-image-wrapper pmc-gradient">
