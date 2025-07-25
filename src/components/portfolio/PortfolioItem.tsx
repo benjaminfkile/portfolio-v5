@@ -30,7 +30,6 @@ const PortfolioItem: FunctionComponent<PortfolioItemProps> = (props) => {
                     <video
                         style={{ transform: `scaleY(${portfolioItem.transform_value})` }}
                         id={`video-${index}`}
-                        crossOrigin="anonymous"
                         className="profolio-video-player"
                         width="350"
                         muted

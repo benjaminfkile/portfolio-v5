@@ -37,7 +37,6 @@ const PortfolioItemModal: FunctionComponent<Props> = (props) => {
                                     {portfolioItem.media_type > 0 &&
                                         <video
                                             id={`modal-video-${index}`}
-                                            crossOrigin="anonymous"
                                             className="profolio-modal-video-player"
                                             width="100%"
                                             muted
