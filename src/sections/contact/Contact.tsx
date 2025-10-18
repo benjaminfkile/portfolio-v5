@@ -8,7 +8,7 @@ const Contact: FunctionComponent<{}> = () => {
                 <div className="text-center">
                     <h2 className="section-heading text-uppercase">Contact Me</h2>
                     <h4><a href="tel:4064711512">406-471-1512</a></h4>
-                    <h4><a href="mailto:benjaminfkile@gmail.com">ben@benkile.com</a></h4>
+                    <h4><a href="mailto:ben@benkile.com">ben@benkile.com</a></h4>
                 </div>
             </div>
         </section>
